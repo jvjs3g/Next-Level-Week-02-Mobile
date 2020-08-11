@@ -54,7 +54,7 @@ const  TeacherItem:React.FC<TeacherItemProps> = ({ teacher,  favorited }) => {
       });
 
       favoritesArray.splice(favoriteIndex,1);
-      setIfFavorited(true);
+      setIfFavorited(false);
     }else{
       
 
@@ -84,10 +84,10 @@ const  TeacherItem:React.FC<TeacherItemProps> = ({ teacher,  favorited }) => {
         Preço/hora {'  '}
       <Text style={styles.priceValue}>R$ {teacher.cost}</Text>
       </Text>
+
       <View style={styles.buttonsContainer}>
         <RectButton onPress={handlerToggleFavorite} style={[styles.favoriteButton, isFavorited ? styles.favorited: {}  ]}>
-          { isFavorited ? <Image source={unfavoriteIcon}/> :<Image source={heartOutLineIcon}/>
-       
+          { isFavorited ? <Image source={unfavoriteIcon}/> :<Image source={heartOutLineIcon}/>}
         </RectButton>
 
         <RectButton onPress={handlerLinkToWhatsapp} style={styles.contactButton}>
