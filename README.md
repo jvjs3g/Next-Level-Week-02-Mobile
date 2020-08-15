@@ -26,4 +26,3 @@ Na versão mobile apenas os alunos podem utilizar nessa versão, no mobile eles 
 * ✔ React Native
 * ✔ Expo
 * ✔ sqlite
- 
